@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }} | {{ block.super }} 
+{% endblock title %}
+
+{% block content %}
+<div class='' align="center" style="background-color:lightblue">
+    <h1>Exists Already</h1>
+    <h3>The URL which you are trying to make actions has been already done in your local system</h3>
+    <p>{{ object.url }}</p>
+    {% if object.clickevent.count %} 
+        <p> 
+        		     Count: {{ 			object.clickevent.count }}
+        	
+        </p> 
+    {% endif %}
+    <p align="center">
+    	<a class='btn btn-link' target="_blank"  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a>
+   </p>
+
+    <a class='btn btn-default' href='/' align="center">Shorten New URL</a>
+</div>
+{% endblock content %}

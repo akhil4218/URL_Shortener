@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+body {
+      background-color: #ff9900;
+    }
+</style>
+
+{% endblock styles %}
+{% block content %}
+
+<h1 class="cover-heading" align="center" > Welcome  </h1>
+    <p class='lead' align="center"> Making Shortner  <strong>URL</strong> </p>
+<p class="lead">
+     <div class='col-sm-3 col-sm-offset-5' > 
+                <form method='POST' action='.'> {% csrf_token %}
+                    {{ form.as_p }}
+                    <input title="This will Shorten the URL" style="background-color: #555555; border: none;color: white;padding: 10px 17px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;" background-color: #4CAF50  width="100%" type='submit' value='*Perform' align="center"> </form>
+                  </br></br>
+                    <a style="color:#003366;font-size: 20px" title="To check all the URLS in the database" target="_blank" href="http://www.airr.com:8000/admin/shortener/kirrurl/"> <strong>   URLS    </strong>   </a>
+                </form>
+
+            </div>
+</p>
+{% endblock content %}
