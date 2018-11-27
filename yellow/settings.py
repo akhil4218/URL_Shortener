@@ -133,4 +133,4 @@ STATIC_URL = '/static/'
 SHORTCODE_MAX=15
 SHORTCODE_MIN=6
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
