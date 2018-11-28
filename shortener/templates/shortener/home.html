@@ -6,6 +6,13 @@
 body {
       background-color: #ff9900;
     }
+    iframe:focus { 
+    outline: none;
+}
+
+iframe[seamless] { 
+    display: block;
+}
 </style>
 
 {% endblock styles %}
@@ -25,16 +32,15 @@ body {
 
             </div>
 </p>
-
 <iframe
     allow="microphone;"
-    width="350"
-    height="430"
-    position: fixed;
-    bottom: 0px;
-    right: 0px; 
+    width="440"
+    style="border: 0" width="500" height="530" frameborder="1" scrolling="no"
+    height="700"
     src="https://console.dialogflow.com/api-client/demo/embedded/07156083-1a0a-4213-ae7f-64c90cf641eb">
 </iframe>
+
+
 {% endblock content %}
 
 
