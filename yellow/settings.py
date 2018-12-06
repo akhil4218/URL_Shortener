@@ -25,7 +25,7 @@ SECRET_KEY = '=e-4se+y0*u6s*n#h%qvmr-cwhgrcj@g!!vc7j3bnyxj&nb#wa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['airr.com','www.airr.com','www.yellow.co','yellow.co']
+ALLOWED_HOSTS = ['www.yellow.co','yellow.co']
 
 
 # Application definition
